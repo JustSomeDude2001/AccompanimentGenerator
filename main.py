@@ -85,7 +85,7 @@ def main():
     # Generating accompaniment for all inputs provided
     for filename in filenames:
         generate_accompaniment(INPUT_DIRECTORY + filename, OUTPUT_DIRECTORY + "Output" + filename,
-                               500, 300, explain=True)
+                               500, 300)
 
 
 if __name__ == "__main__":
