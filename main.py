@@ -18,7 +18,7 @@ def get_file(filename):
     return file
 
 
-# Get names of files in the music directory. Deprecated.
+# Get names of files in the music directory.
 def get_midi_file_names(directory):
     result = []
     for filename in listdir(directory):
