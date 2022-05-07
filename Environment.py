@@ -66,7 +66,7 @@ class Environment:
                 fits_progression = True
                 for j in range(i, i + len(progression)):
                     chord = individual.chords[j]
-                    if chord != self.scale.consonantChords[progression[j - i]]:
+                    if chord != self.scale.consonant_chords[progression[j - i]]:
                         fits_progression = False
                         break
                 if fits_progression:

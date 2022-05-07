@@ -15,15 +15,15 @@ class Scale:
             note_last += x
 
         # Gathering all consonant chords using the circle of fifths.
-        self.consonantChords = []
+        self.consonant_chords = []
 
-        self.consonantChords.append(Chord((root + 0) % 12, TRIAD_MAJOR)) # I
-        self.consonantChords.append(Chord((root + 2) % 12, TRIAD_MINOR)) # II
-        self.consonantChords.append(Chord((root + 4) % 12, TRIAD_MINOR)) # III
-        self.consonantChords.append(Chord((root + 5) % 12, TRIAD_MAJOR)) # IV
-        self.consonantChords.append(Chord((root + 7) % 12, TRIAD_MAJOR)) # V
-        self.consonantChords.append(Chord((root + 9) % 12, TRIAD_MINOR)) # VI
-        self.consonantChords.append(Chord((root + 11) % 12, TRIAD_DIM))  # VII
+        self.consonant_chords.append(Chord((root + 0) % 12, TRIAD_MAJOR)) # I
+        self.consonant_chords.append(Chord((root + 2) % 12, TRIAD_MINOR)) # II
+        self.consonant_chords.append(Chord((root + 4) % 12, TRIAD_MINOR)) # III
+        self.consonant_chords.append(Chord((root + 5) % 12, TRIAD_MAJOR)) # IV
+        self.consonant_chords.append(Chord((root + 7) % 12, TRIAD_MAJOR)) # V
+        self.consonant_chords.append(Chord((root + 9) % 12, TRIAD_MINOR)) # VI
+        self.consonant_chords.append(Chord((root + 11) % 12, TRIAD_DIM))  # VII
 
     # Get a scale of a track
     @classmethod
@@ -65,7 +65,7 @@ class Scale:
     # Get chords of scale that fit the note per COF
     def get_fitting_chords(self, note: int):
         result = []
-        for chord in self.consonantChords:
+        for chord in self.consonant_chords:
             if chord.notes.count(note % 12) > 0:
                 result.append(chord)
         return result

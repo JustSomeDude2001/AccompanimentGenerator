@@ -60,7 +60,7 @@ def generate_accompaniment(input_filename, output_filename,
         print("Durations: ", timestamps)
         print("Chord length: ", expected_chord_length)
         for i in range(7):
-            print(environment.scale.consonantChords[i].notes)
+            print(environment.scale.consonant_chords[i].notes)
         for i in range(expected_chord_amount):
             note = environment.get_note_on_time(i * expected_chord_length)
             print("Note: ", note)
