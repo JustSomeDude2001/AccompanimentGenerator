@@ -32,9 +32,7 @@ class Population:
                                                parent_a=parent_a,
                                                parent_b=parent_b))
 
-    def populate_outsiders(self):
-        pass
-
+    # Mutate all individuals by a specified magnitude
     def mutate(self, magnitude: int):
         for i in range(len(self.individuals)):
             self.individuals[i].mutate(magnitude)
