@@ -48,6 +48,7 @@ def generate_accompaniment(input_filename, output_filename,
         # Not mutating last generation to preserve good tracks.
         if i < count_generations - 1:
             population.mutate(1)
+    population.prune(environment, 1)
     filewrapper.add_individual_as_accompaniment(population.individuals[0], velocity=40,
                                                 octave=filewrapper.get_melody_octave() - 1)
     filewrapper.save(output_filename)
