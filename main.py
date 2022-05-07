@@ -1,3 +1,6 @@
+# Important abbreviations:
+# COF - Circle of fifths. When you see "cof" appear in code, assume circle of fifths.
+
 import os.path
 import sys
 
