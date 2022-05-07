@@ -1,6 +1,8 @@
-MUSIC_DIRECTORY = "./songs/"
-INPUT_DIRECTORY = "./songs/input/"
-OUTPUT_DIRECTORY = "./songs/output/"
+import os
+
+MUSIC_DIRECTORY = os.path.join('.', 'songs')
+INPUT_DIRECTORY = os.path.join(MUSIC_DIRECTORY, 'input')
+OUTPUT_DIRECTORY = os.path.join(MUSIC_DIRECTORY, 'output')
 
 # All triad chords.
 TRIAD_MINOR = [+0, +3, +7]

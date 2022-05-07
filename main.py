@@ -2,6 +2,7 @@
 # COF - Circle of fifths. When you see "cof" appear in code, assume circle of fifths.
 
 import os.path
+import platform
 import sys
 
 from mido import MidiFile
@@ -88,7 +89,8 @@ def main():
     filenames = get_midi_file_names(INPUT_DIRECTORY)
     # Generating accompaniment for all inputs provided
     for filename in filenames:
-        generate_accompaniment(INPUT_DIRECTORY + filename, OUTPUT_DIRECTORY + "Output" + filename,
+        generate_accompaniment(os.path.join(INPUT_DIRECTORY, filename),
+                               os.path.join(OUTPUT_DIRECTORY, "Output" + filename),
                                500, 300)
 
 
