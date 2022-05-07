@@ -30,7 +30,7 @@ REWARD_PROGRESSION        = 0.5
 CHORD_PROGRESSIONS = [[0, 4, 5, 3], #I - V - VI - IV   Popular
                       [1, 4, 0],    #II - V - I        Jazzy
                       [1, 6, 0],    #II - VII - I      Jazzy
-                      [0, 3, 1, 4], #I - IV - II - V   Montgommery Ward Bridge. Jazzy
+                      [0, 3, 1, 4], #I - IV - II - V   Montgomery-Ward Bridge. Jazzy
                       [5, 1, 3, 0], #VI - II - V - I   Circle Progression. Popular
                       [2, 6, 0, 4], #III - VII - I - V Romanesca.
                       [0, 5, 1, 4], #I - VI - II - V   Popular.
