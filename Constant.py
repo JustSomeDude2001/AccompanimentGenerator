@@ -1,6 +1,6 @@
 import os
 
-MUSIC_DIRECTORY = os.path.join('.', 'songs')
+MUSIC_DIRECTORY = os.path.join(os.path.dirname(__file__), 'songs')
 INPUT_DIRECTORY = os.path.join(MUSIC_DIRECTORY, 'input')
 OUTPUT_DIRECTORY = os.path.join(MUSIC_DIRECTORY, 'output')
 
